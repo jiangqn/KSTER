@@ -1,0 +1,115 @@
+name: "transformer"
+
+data:
+    src: "de"
+    trg: "en"
+    train: "datasets/noisy_it/train"
+    dev:   "datasets/noisy_it/dev"
+    test:  "datasets/noisy_it/test"
+    level: "bpe"
+    lowercase: False
+    max_sent_length: 100
+    src_vocab: "datasets/noisy_it/vocab.txt"
+    trg_vocab: "datasets/noisy_it/vocab.txt"
+
+testing:
+    beam_size: 4
+    alpha: 0.6
+    sacrebleu:
+        use_detokenization: True
+
+training:
+    random_seed: 42
+    optimizer: "adam"
+    normalization: "tokens"
+    adam_betas: [0.9, 0.98]
+    scheduling: "noam"
+    loss: "crossentropy"
+    learning_rate: 0.0007
+    learning_rate_min: 0.00000001
+    learning_rate_factor: 1
+    learning_rate_warmup: 4000
+    weight_decay: 0.0
+    label_smoothing: 0.1
+    batch_size: 32768
+    batch_type: "token"
+    eval_batch_size: 3600
+    eval_batch_type: "token"
+    batch_multiplier: 1
+    early_stopping_metric: "ppl"
+    epochs: 100
+    validation_freq: 1000
+    logging_freq: 100
+    eval_metric: "bleu"
+    model_dir: "models/transformer_base_noisy_it_de2en"
+    overwrite: True
+    shuffle: True
+    use_cuda: True
+    max_output_length: 100
+    print_valid_sents: [0, 1, 2, 3]
+    keep_last_ckpts: 5
+
+combiner_training:
+    random_seed: 42
+    optimizer: "adam"
+    normalization: "tokens"
+    adam_betas: [0.9, 0.999]
+    scheduling: "plateau"
+    patience: 8
+    decrease_factor: 0.7
+    loss: "crossentropy"
+    learning_rate: 0.0002
+    learning_rate_min: 0.00000001
+    weight_decay: 0.0
+    label_smoothing: 0.1
+    batch_size: 32768
+    batch_type: "token"
+    eval_batch_size: 3600
+    eval_batch_type: "token"
+    batch_multiplier: 1
+    early_stopping_metric: "ppl"
+    max_steps: 30000
+    epochs: 10000
+    validation_freq: 1000
+    logging_freq: 100
+    eval_metric: "bleu"
+    model_dir: "models/transformer_base_noisy_it_de2en_combiner"
+    overwrite: True
+    shuffle: True
+    use_cuda: True
+    max_output_length: 100
+    print_valid_sents: [0, 1, 2, 3]
+    keep_last_ckpts: 5
+
+model:
+    initializer: "xavier"
+    bias_initializer: "zeros"
+    init_gain: 1.0
+    embed_initializer: "xavier"
+    embed_init_gain: 1.0
+    tied_embeddings: True
+    tied_softmax: True
+    encoder:
+        type: "transformer"
+        num_layers: 6
+        num_heads: 8
+        embeddings:
+            embedding_dim: 512
+            scale: True
+            dropout: 0.
+        # typically ff_size = 4 x hidden_size
+        hidden_size: 512
+        ff_size: 2048
+        dropout: 0.1
+    decoder:
+        type: "transformer"
+        num_layers: 6
+        num_heads: 8
+        embeddings:
+            embedding_dim: 512
+            scale: True
+            dropout: 0.
+        # typically ff_size = 4 x hidden_size
+        hidden_size: 512
+        ff_size: 2048
+        dropout: 0.1

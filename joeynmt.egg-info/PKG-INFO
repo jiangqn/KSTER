@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: joeynmt
+Version: 1.2
+Summary: Minimalist NMT for educational purposes
+Home-page: https://github.com/joeynmt/joeynmt
+Author: Jasmijn Bastings and Julia Kreutzer
+License: Apache License
+Project-URL: Documentation, http://joeynmt.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/joeynmt/joeynmt
+Project-URL: Tracker, https://github.com/joeynmt/joeynmt/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5

@@ -1,0 +1,254 @@
+test KSTER multi domain performance in DAMT setting in EN-DE direction
+wmt14
+2021-10-05 15:36:28,820 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 15:36:28,820 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 15:36:40,651 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 15:36:40,684 - INFO - joeynmt.data - Loading test data...
+2021-10-05 15:36:40,718 - INFO - joeynmt.data - Data loaded.
+2021-10-05 15:36:40,826 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 15:36:44,725 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 15:36:45,819 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 15:38:21,757 - INFO - joeynmt.prediction - Decoding on dev set (datasets/wmt14/newstest2013.de)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 16:15:30,255 - INFO - joeynmt.prediction -  dev bleu[13a]:  25.73 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 16:15:30,255 - INFO - joeynmt.prediction - Decoding on test set (datasets/wmt14/newstest2014.de)...
+2021-10-05 16:34:28,531 - INFO - joeynmt.prediction - test bleu[13a]:  27.69 [Beam search decoding with beam size = 4 and alpha = 0.6]
+law
+2021-10-05 16:34:45,147 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 16:34:45,148 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 16:34:56,991 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 16:34:57,021 - INFO - joeynmt.data - Loading test data...
+2021-10-05 16:34:57,047 - INFO - joeynmt.data - Data loaded.
+2021-10-05 16:34:57,228 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 16:35:05,944 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 16:35:07,027 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 16:37:02,388 - INFO - joeynmt.prediction - Decoding on dev set (datasets/law/dev.de)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 16:46:36,417 - INFO - joeynmt.prediction -  dev bleu[13a]:  52.97 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 16:46:36,417 - INFO - joeynmt.prediction - Decoding on test set (datasets/law/test.de)...
+2021-10-05 16:52:45,759 - INFO - joeynmt.prediction - test bleu[13a]:  53.04 [Beam search decoding with beam size = 4 and alpha = 0.6]
+medical
+2021-10-05 16:53:02,326 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 16:53:02,327 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 16:53:14,146 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 16:53:14,171 - INFO - joeynmt.data - Loading test data...
+2021-10-05 16:53:14,194 - INFO - joeynmt.data - Data loaded.
+2021-10-05 16:53:14,387 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 16:53:20,987 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 16:53:22,108 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 16:55:22,314 - INFO - joeynmt.prediction - Decoding on dev set (datasets/medical/dev.de)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 17:00:34,643 - INFO - joeynmt.prediction -  dev bleu[13a]:  49.85 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 17:00:34,643 - INFO - joeynmt.prediction - Decoding on test set (datasets/medical/test.de)...
+2021-10-05 17:04:36,006 - INFO - joeynmt.prediction - test bleu[13a]:  49.23 [Beam search decoding with beam size = 4 and alpha = 0.6]
+koran
+2021-10-05 17:04:53,474 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 17:04:53,475 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 17:05:05,281 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 17:05:05,306 - INFO - joeynmt.data - Loading test data...
+2021-10-05 17:05:05,327 - INFO - joeynmt.data - Data loaded.
+2021-10-05 17:05:05,404 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 17:05:11,659 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 17:05:12,778 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 17:06:50,948 - INFO - joeynmt.prediction - Decoding on dev set (datasets/koran/dev.de)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 17:12:00,007 - INFO - joeynmt.prediction -  dev bleu[13a]:  15.28 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 17:12:00,007 - INFO - joeynmt.prediction - Decoding on test set (datasets/koran/test.de)...
+2021-10-05 17:15:41,091 - INFO - joeynmt.prediction - test bleu[13a]:  15.94 [Beam search decoding with beam size = 4 and alpha = 0.6]
+it
+2021-10-05 17:15:58,856 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 17:15:58,857 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 17:16:10,643 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 17:16:10,664 - INFO - joeynmt.data - Loading test data...
+2021-10-05 17:16:10,680 - INFO - joeynmt.data - Data loaded.
+2021-10-05 17:16:11,114 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 17:16:17,717 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 17:16:18,837 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 17:17:56,123 - INFO - joeynmt.prediction - Decoding on dev set (datasets/it/dev.de)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 17:21:23,755 - INFO - joeynmt.prediction -  dev bleu[13a]:  29.41 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 17:21:23,755 - INFO - joeynmt.prediction - Decoding on test set (datasets/it/test.de)...
+2021-10-05 17:23:42,652 - INFO - joeynmt.prediction - test bleu[13a]:  31.82 [Beam search decoding with beam size = 4 and alpha = 0.6]
+subtitles
+2021-10-05 17:23:58,596 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 17:23:58,596 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 17:24:10,424 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 17:24:10,445 - INFO - joeynmt.data - Loading test data...
+2021-10-05 17:24:10,460 - INFO - joeynmt.data - Data loaded.
+2021-10-05 17:24:10,619 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 17:24:17,019 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 17:24:18,115 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 17:25:55,009 - INFO - joeynmt.prediction - Decoding on dev set (datasets/subtitles/dev.de)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 17:28:29,490 - INFO - joeynmt.prediction -  dev bleu[13a]:  23.19 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 17:28:29,490 - INFO - joeynmt.prediction - Decoding on test set (datasets/subtitles/test.de)...
+2021-10-05 17:30:19,467 - INFO - joeynmt.prediction - test bleu[13a]:  22.63 [Beam search decoding with beam size = 4 and alpha = 0.6]
+test KSTER multi domain performance in DAMT setting in DE-EN direction
+wmt14
+2021-10-05 17:30:34,920 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 17:30:34,921 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 17:30:46,803 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 17:30:46,837 - INFO - joeynmt.data - Loading test data...
+2021-10-05 17:30:46,871 - INFO - joeynmt.data - Data loaded.
+2021-10-05 17:30:47,376 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 17:30:56,621 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 17:30:57,788 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 17:32:56,933 - INFO - joeynmt.prediction - Decoding on dev set (datasets/wmt14/newstest2013.en)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 18:07:41,534 - INFO - joeynmt.prediction -  dev bleu[13a]:  30.77 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 18:07:41,535 - INFO - joeynmt.prediction - Decoding on test set (datasets/wmt14/newstest2014.en)...
+2021-10-05 18:26:42,684 - INFO - joeynmt.prediction - test bleu[13a]:  31.94 [Beam search decoding with beam size = 4 and alpha = 0.6]
+law
+2021-10-05 18:26:59,998 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 18:26:59,998 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 18:27:11,865 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 18:27:11,904 - INFO - joeynmt.data - Loading test data...
+2021-10-05 18:27:11,932 - INFO - joeynmt.data - Data loaded.
+2021-10-05 18:27:12,002 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 18:27:20,923 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 18:27:22,027 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 18:28:58,305 - INFO - joeynmt.prediction - Decoding on dev set (datasets/law/dev.en)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 18:38:06,733 - INFO - joeynmt.prediction -  dev bleu[13a]:  58.45 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 18:38:06,734 - INFO - joeynmt.prediction - Decoding on test set (datasets/law/test.en)...
+2021-10-05 18:43:53,093 - INFO - joeynmt.prediction - test bleu[13a]:  58.64 [Beam search decoding with beam size = 4 and alpha = 0.6]
+medical
+2021-10-05 18:44:09,827 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 18:44:09,828 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 18:44:21,630 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 18:44:21,656 - INFO - joeynmt.data - Loading test data...
+2021-10-05 18:44:21,679 - INFO - joeynmt.data - Data loaded.
+2021-10-05 18:44:21,834 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 18:44:29,798 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 18:44:30,878 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 18:46:05,959 - INFO - joeynmt.prediction - Decoding on dev set (datasets/medical/dev.en)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 18:50:52,286 - INFO - joeynmt.prediction -  dev bleu[13a]:  52.37 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 18:50:52,287 - INFO - joeynmt.prediction - Decoding on test set (datasets/medical/test.en)...
+2021-10-05 18:54:44,119 - INFO - joeynmt.prediction - test bleu[13a]:  52.79 [Beam search decoding with beam size = 4 and alpha = 0.6]
+koran
+2021-10-05 18:54:59,917 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 18:54:59,918 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 18:55:11,722 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 18:55:11,747 - INFO - joeynmt.data - Loading test data...
+2021-10-05 18:55:11,768 - INFO - joeynmt.data - Data loaded.
+2021-10-05 18:55:11,891 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 18:55:18,530 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 18:55:19,622 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 18:56:53,111 - INFO - joeynmt.prediction - Decoding on dev set (datasets/koran/dev.en)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 19:01:10,087 - INFO - joeynmt.prediction -  dev bleu[13a]:  14.47 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 19:01:10,088 - INFO - joeynmt.prediction - Decoding on test set (datasets/koran/test.en)...
+2021-10-05 19:04:03,225 - INFO - joeynmt.prediction - test bleu[13a]:  15.24 [Beam search decoding with beam size = 4 and alpha = 0.6]
+it
+2021-10-05 19:04:19,844 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 19:04:19,845 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 19:04:31,708 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 19:04:31,731 - INFO - joeynmt.data - Loading test data...
+2021-10-05 19:04:31,748 - INFO - joeynmt.data - Data loaded.
+2021-10-05 19:04:31,958 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 19:04:38,602 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 19:04:39,701 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 19:06:16,439 - INFO - joeynmt.prediction - Decoding on dev set (datasets/it/dev.en)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 19:09:32,784 - INFO - joeynmt.prediction -  dev bleu[13a]:  34.24 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 19:09:32,784 - INFO - joeynmt.prediction - Decoding on test set (datasets/it/test.en)...
+2021-10-05 19:11:43,075 - INFO - joeynmt.prediction - test bleu[13a]:  36.90 [Beam search decoding with beam size = 4 and alpha = 0.6]
+subtitles
+2021-10-05 19:11:58,452 - INFO - root - Hello! This is Joey-NMT (version 1.2).
+/usr/local/lib/python3.7/dist-packages/torchtext/data/field.py:150: UserWarning: Field class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 19:11:58,453 - INFO - joeynmt.data - Building vocabulary...
+2021-10-05 19:12:10,287 - INFO - joeynmt.data - Loading dev data...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/example.py:78: UserWarning: Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('Example class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.', UserWarning)
+2021-10-05 19:12:10,307 - INFO - joeynmt.data - Loading test data...
+2021-10-05 19:12:10,321 - INFO - joeynmt.data - Data loaded.
+2021-10-05 19:12:10,422 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 14400 (with beam_size)
+2021-10-05 19:12:16,564 - INFO - joeynmt.model - Building an encoder-decoder model...
+2021-10-05 19:12:17,674 - INFO - joeynmt.model - Enc-dec model built.
+2021-10-05 19:14:04,516 - INFO - joeynmt.prediction - Decoding on dev set (datasets/subtitles/dev.en)...
+/usr/local/lib/python3.7/dist-packages/torchtext/data/iterator.py:48: UserWarning: BucketIterator class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+/usr/local/lib/python3.7/dist-packages/torchtext/data/batch.py:23: UserWarning: Batch class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.
+  warnings.warn('{} class will be retired soon and moved to torchtext.legacy. Please see the most recent release notes for further information.'.format(self.__class__.__name__), UserWarning)
+2021-10-05 19:16:21,739 - INFO - joeynmt.prediction -  dev bleu[13a]:  25.07 [Beam search decoding with beam size = 4 and alpha = 0.6]
+2021-10-05 19:16:21,739 - INFO - joeynmt.prediction - Decoding on test set (datasets/subtitles/test.en)...
+2021-10-05 19:18:01,512 - INFO - joeynmt.prediction - test bleu[13a]:  25.15 [Beam search decoding with beam size = 4 and alpha = 0.6]
