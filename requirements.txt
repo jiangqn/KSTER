@@ -15,7 +15,6 @@ six==1.12
 wrapt==1.11.1
 sacremoses==0.0.43
 faiss-gpu==1.7.0
-bytedkafka==0.0.17
 tqdm==4.59.0
 numba==0.53.1
 npy-append-array==0.9.6
